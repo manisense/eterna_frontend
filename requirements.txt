@@ -1,0 +1,47 @@
+Frontend Task - Token Trading Table
+Build a pixel-perfect replica of Axiom Trade's token discovery table with these requirements:​
+( https://axiom.trade/pulse )
+Core Features:
+●​
+●​
+●​
+●​
+●​
+●​
+
+All token columns(New pairs, Final Stretch, Migrated)
+Implement variety: popover, tooltip, modal, sorting
+Different interaction patterns: hover effects, click actions
+Real-time price updates (WebSocket mock) with smooth color transitions
+Loading states: skeleton, shimmer, progressive loading, error boundaries
+Pixel-perfect visual match to website (≤ 2 px diff verified with a visual-regression tool)
+
+Technical Requirements:
+●​
+●​
+●​
+●​
+●​
+
+Next.js 14 App Router, TypeScript (strict), Tailwind CSS
+Redux Toolkit for complex state, React Query for data fetching
+Radix UI/Headless UI/shadcn/ui for accessible components
+Performance: memoized components, no layout shifts, <100ms interactions
+Atomic Architecture: reusable components, custom hooks, shared utilities, DRY
+principles
+●​ Code quality: comprehensive typing, error handling, documented complex logic (bonus)
+●​ Must score ≥ 90 on Lighthouse (mobile & desktop)
+Evaluation: Performance optimization (35%), Code structure/reusability (30%), Pixel-perfect UI
+(25%), Feature completeness (10%)
+Note: Prioritize smooth performance and clean, reusable code architecture. Every component
+should be built for reuse across the application.
+Deliverables:
+1.​ GitHub repo with clean commits
+2.​ Vercel deployment
+3.​ 1-2 min public youtube video link that shows functionality
+4.​ Responsive layout complete down to 320 px width, with auto-layout snapshots attached
+to the README
+Please note all three deliverables are required, we’ll consider the application incomplete if any
+of the deliverables are missing.
+
+
