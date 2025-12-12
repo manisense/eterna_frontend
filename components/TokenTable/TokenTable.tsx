@@ -12,11 +12,15 @@ import { TableColumn, Token } from '@/types';
 import { Skeleton } from '../ui/skeleton';
 
 const COLUMNS: TableColumn[] = [
-    { id: 'name', label: 'TOKEN', sortable: true },
-    { id: 'price', label: 'PRICE', sortable: true },
-    { id: 'volume', label: 'VOLUME', sortable: true },
-    { id: 'marketCap', label: 'MKT CAP', sortable: true },
-    { id: 'actions', label: '', sortable: false },
+    { id: 'name', label: 'Pair Info', sortable: true },
+    { id: 'graph', label: '', sortable: false }, // Sparkline placeholder
+    { id: 'marketCap', label: 'Market Cap', sortable: true },
+    { id: 'liquidity', label: 'Liquidity', sortable: true },
+    { id: 'volume', label: 'Volume', sortable: true },
+    { id: 'txns', label: 'TXNS', sortable: true }, // Custom sort logic needed later
+    { id: 'audit', label: 'Token Info', sortable: false },
+    { id: 'holders', label: '', sortable: false }, // Holders column
+    { id: 'actions', label: 'Action', sortable: false },
 ];
 
 export function TokenTable() {

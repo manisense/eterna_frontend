@@ -10,6 +10,14 @@ export interface Token {
     image?: string;
     status: 'new' | 'final_stretch' | 'migrated'; // Columns mentioned in requirements
     launchDate: string;
+    // New Fields
+    liquidity: number;
+    txns: number;
+    buys: number;
+    sells: number;
+    auditScore: number;
+    isAudited: boolean;
+    pairAge: string; // e.g., "2m", "1d"
 }
 
 export interface WebSocketMessage {
