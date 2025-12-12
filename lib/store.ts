@@ -2,10 +2,12 @@ import { configureStore } from '@reduxjs/toolkit'
 import { useDispatch, useSelector, TypedUseSelectorHook } from 'react-redux'
 
 // We will add slices here later
+import tradeReducer from './features/tradeSlice'
+
 export const store = configureStore({
-  reducer: {
-    // trade: tradeReducer
-  },
+    reducer: {
+        trade: tradeReducer
+    },
 })
 
 export type RootState = ReturnType<typeof store.getState>
