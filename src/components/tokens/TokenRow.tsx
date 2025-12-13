@@ -39,7 +39,7 @@ export const TokenRow = memo<TokenRowProps>(({ token, onBuyClick }) => {
     >
       <div className="p-3 flex gap-3">
         {/* Token Image with Contract Address */}
-        <div className="flex-shrink-0 flex flex-col items-center gap-1">
+        <div className="shrink-0 flex flex-col items-center gap-1">
           <div className="relative">
             <TokenIcon 
               src={token.icon} 
@@ -194,7 +194,7 @@ export const TokenRow = memo<TokenRowProps>(({ token, onBuyClick }) => {
               <span>{txCount}</span>
               <div className="w-10 h-1.5 bg-gray-700 rounded-full overflow-hidden">
                 <div 
-                  className="h-full bg-gradient-to-r from-green-500 to-pink-500 rounded-full"
+                  className="h-full bg-linear-to-r from-green-500 to-pink-500 rounded-full"
                   style={{ width: `${Math.min(txCount * 2, 100)}%` }}
                 ></div>
               </div>

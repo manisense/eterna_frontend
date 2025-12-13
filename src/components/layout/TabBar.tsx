@@ -33,15 +33,15 @@ export const TabBar = memo(() => {
   return (
     <>
       {/* Mobile Tab Bar - horizontal scrolling */}
-      <div className="md:hidden flex-shrink-0 bg-[#0a0a0f] border-b border-gray-800/50">
+      <div className="md:hidden shrink-0 bg-[#0a0a0f] border-b border-gray-800/50">
         <div className="flex items-center gap-1 px-2 py-2 overflow-x-auto scrollbar-hide">
           {/* Filter Icon */}
-          <button className="flex-shrink-0 p-2 text-gray-500 hover:text-white">
+          <button className="shrink-0 p-2 text-gray-500 hover:text-white">
             <Filter size={18} />
           </button>
 
           {/* Chain Icon */}
-          <button className="flex-shrink-0 p-2">
+          <button className="shrink-0 p-2">
             {selectedChain === 'BNB' ? (
               <BNBIcon size={18} className="text-yellow-500" />
             ) : (
@@ -54,7 +54,7 @@ export const TabBar = memo(() => {
             <button
               key={tab.id}
               onClick={() => dispatch(setActiveTab(tab.id))}
-              className={`flex-shrink-0 px-3 py-1.5 rounded text-[11px] font-medium transition-colors ${
+              className={`shrink-0 px-3 py-1.5 rounded text-[11px] font-medium transition-colors ${
                 activeTab === tab.id
                   ? 'bg-gray-700/80 text-white'
                   : 'bg-gray-800/50 text-gray-400 hover:text-white'
@@ -65,13 +65,13 @@ export const TabBar = memo(() => {
           ))}
 
           {/* P1 Badge */}
-          <button className="flex-shrink-0 px-2 py-1.5 text-[11px] text-blue-400 font-medium">
+          <button className="shrink-0 px-2 py-1.5 text-[11px] text-blue-400 font-medium">
             P1
           </button>
 
           {/* Settings Icon */}
           <button 
-            className="flex-shrink-0 p-2 text-gray-500 hover:text-white"
+            className="shrink-0 p-2 text-gray-500 hover:text-white"
             onClick={() => dispatch(openTickerRowSettingsPanel())}
           >
             <SettingsIcon size={16} />
@@ -80,7 +80,7 @@ export const TabBar = memo(() => {
       </div>
 
       {/* Desktop Tab Bar */}
-      <div className="hidden md:flex flex-shrink-0 items-center justify-between px-4 py-1.5 bg-[#0a0a0f] border-b border-gray-800/50">
+      <div className="hidden md:flex shrink-0 items-center justify-between px-4 py-1.5 bg-[#0a0a0f] border-b border-gray-800/50">
         {/* Left: Icon Controls */}
         <div className="flex items-center gap-2">
           {/* Settings */}

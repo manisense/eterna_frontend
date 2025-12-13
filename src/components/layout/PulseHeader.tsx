@@ -25,7 +25,7 @@ export const PulseHeader = memo(() => {
   );
 
   return (
-    <div className="hidden md:flex flex-shrink-0 items-center justify-between px-4 py-2 bg-[#0a0a0f] border-b border-gray-800/50">
+    <div className="hidden md:flex shrink-0 items-center justify-between px-4 py-2 bg-[#0a0a0f] border-b border-gray-800/50">
       {/* Left: Pulse Logo & Chain Icons */}
       <div className="flex items-center gap-3">
         {/* Pulse Text with filter */}

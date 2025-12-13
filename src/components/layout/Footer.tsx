@@ -17,7 +17,7 @@ export const Footer = memo(() => {
   );
 
   return (
-    <footer className="flex-shrink-0 sticky bottom-0 z-50 bg-[#0a0a0f] border-t border-gray-800/50">
+    <footer className="shrink-0 sticky bottom-0 z-50 bg-[#0a0a0f] border-t border-gray-800/50">
       {/* Mobile Bottom Navigation */}
       <div className="md:hidden flex items-center justify-around px-2 py-3 bg-[#0a0a0f]">
         <button className="flex flex-col items-center gap-1 text-gray-500 hover:text-white transition-colors">

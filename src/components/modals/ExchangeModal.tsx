@@ -142,7 +142,7 @@ export const ExchangeModal = memo(() => {
                       <div className="flex-1 text-xs text-gray-300 font-mono break-all">
                         {depositAddress}
                       </div>
-                      <button className="p-1 text-gray-400 hover:text-white transition-colors flex-shrink-0">
+                      <button className="p-1 text-gray-400 hover:text-white transition-colors shrink-0">
                         <Copy size={14} />
                       </button>
                     </div>

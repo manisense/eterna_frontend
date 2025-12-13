@@ -60,11 +60,11 @@ export const Header = memo(() => {
   );
 
   return (
-    <header className="flex-shrink-0 sticky top-0 z-50 bg-[#0a0a0f] border-b border-gray-800/50">
+    <header className="shrink-0 sticky top-0 z-50 bg-[#0a0a0f] border-b border-gray-800/50">
       <div className="flex items-center justify-between px-3 py-2">
         {/* Logo */}
         <div className="flex items-center gap-2">
-          <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
+          <div className="w-7 h-7 bg-linear-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
             <span className="text-white text-sm font-bold">A</span>
           </div>
           <span className="text-white text-sm font-medium hidden sm:inline">axiom</span>
@@ -135,7 +135,7 @@ export const Header = memo(() => {
               </button>
               
               {isChainDropdownOpen && (
-                <div className="absolute top-full right-0 mt-1 w-36 bg-gray-900 border border-gray-700 rounded-lg shadow-xl overflow-hidden z-[60]">
+                <div className="absolute top-full right-0 mt-1 w-36 bg-gray-900 border border-gray-700 rounded-lg shadow-xl overflow-hidden z-60">
                   <button
                     className={`w-full flex items-center gap-3 px-4 py-2.5 text-sm text-left transition-colors ${
                       selectedChain === 'SOL' ? 'bg-gray-800 text-white' : 'text-gray-300 hover:bg-gray-800'
